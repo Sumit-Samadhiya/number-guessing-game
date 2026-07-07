@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: #f4f4f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #edf2f7;
+  color: #1f2937;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -12,24 +12,22 @@ body {
 .container {
   width: min(95%, 420px);
   padding: 24px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 20px;
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(12px);
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
 }
 
 h1 {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   text-align: center;
+  font-size: 1.9rem;
 }
 
 .description {
-  margin-top: 0;
-  margin-bottom: 24px;
+  margin: 0 0 24px;
   text-align: center;
-  color: #dbeafe;
+  color: #4b5563;
 }
 
 .controls {
@@ -37,7 +35,7 @@ h1 {
   gap: 10px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 button,
@@ -46,36 +44,39 @@ input {
 }
 
 button {
-  border: none;
-  border-radius: 10px;
-  padding: 12px 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 16px;
   cursor: pointer;
-  transition: transform 0.15s ease, background-color 0.15s ease;
+  background: #f8fafc;
+  color: #1f2937;
 }
 
 button:hover {
-  transform: translateY(-1px);
+  background: #e2e8f0;
 }
 
 button#guess-btn,
 button.play-again {
   width: 100%;
   margin-top: 16px;
-  background: #38bdf8;
-  color: #0f172a;
-  font-weight: 700;
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
 }
 
 button#guess-btn:hover,
 button.play-again:hover {
-  background: #7dd3fc;
+  background: #1d4ed8;
+  border-color: #1d4ed8;
 }
 
 .status p {
   margin: 10px 0;
   padding: 14px 16px;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
 }
 
 .guess-form {
@@ -90,16 +91,16 @@ button.play-again:hover {
 .guess-form input {
   width: 100%;
   padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  background: rgba(255, 255, 255, 0.08);
-  color: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #111827;
 }
 
 .guess-form input:focus {
   outline: none;
-  border-color: #93c5fd;
-  box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.18);
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 @media (max-width: 480px) {
